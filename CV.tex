@@ -1,0 +1,284 @@
+
+\documentclass[letterpaper,9.5pt,oneside]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TYPESETTING OPTIONS.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\TypesetInNonStopMode}{1}
+\newcommand{\TypesetInDraftMode}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{CV-Preamble.tex}
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Christina Bogdan}
+\newcommand{\CVTitle}{Christina Bogdan's Resume}
+\newcommand{\CVNote}{CV compiled on {\today}}
+\newcommand{\CVWebpage}{http://www.example.com/johndoe}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+pdfpagemode={},
+bookmarks=true,
+unicode=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{\CVAuthor}
+
+\begin{subtitle}
+
+\par
+\href{mailto:christina.bogdan@gmail.com}
+{christina.bogdan@gmail.com}
+\, \SubBulletSymbol \, \url{christaina.github.io}
+\end{subtitle}
+
+\begin{body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\section
+{Education}
+{Education}
+{PDF:Education}
+
+
+\textbf{New York University},
+New York, NY
+
+\GapNoBreak
+%\BulletItem
+Master of Science (MS) in
+Data Science
+\hfill
+\DatestampYMD{2015}{09}{01} --
+\DatestampYMD{2017}{05}{01}
+\begin{detail}
+\BulletItem
+Courses: Machine Learning, Deep Learning, Statistical and Mathematical Methods for Data Science, Fundamental Algorithms, Natural Language Understanding with Deep Learning, Big Data, Inference and Representation, Monte Carlo Methods, Causal Inference, Advanced Machine Learning
+\end{detail}
+
+\GapNoBreak
+Bachelor of Arts (BA) in Mathematics
+\hfill
+\DatestampYMD{2013}{09}{15} --
+\DatestampYMD{2015}{05}{15}
+\begin{detail}
+\BulletItem
+Courses: Honors Linear Algebra (Graduate), Basic Probability (Graduate), Data Structures, Mathematical Modeling, Mathematical Statistics, Theory of Probability
+\end{detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Professional Experience}
+{Professional Experience}
+{PDF:ProfessionalExperience}
+
+
+\textbf{The Climate Corporation},
+San Francisco, CA
+
+\GapNoBreak
+%\BulletItem
+Senior Data Scientist
+\hfill
+\DatestampYMD{2018}{03}{10} --
+Present 
+\begin{detail}
+\end{detail}
+
+\BigGap
+
+
+\textbf{The Climate Corporation},
+San Francisco, CA
+
+\GapNoBreak
+%\BulletItem
+Data Scientist
+\hfill
+\DatestampYMD{2017}{07}{10} --
+\DatestampYMD{2018}{03}{09}
+\begin{detail}
+\BulletItem Created compressed representations of weather time series data using autoencoders for use as features
+\BulletItem Implement pipeline to train deep learning models at scale with Spark
+\BulletItem Wrote post for tech blog on process of operationalizing distributed deep learning on our Spark platform
+\end{detail}
+
+\BigGap
+
+\textbf{NYU Department of Environmental Studies},
+New York, NY
+
+\GapNoBreak
+%\BulletItem
+Research Assistant
+\hfill
+\DatestampYMD{2016}{10}{16} --
+\DatestampYMD{2017}{06}{16} 
+\begin{detail}
+\BulletItem Applied convolutional neural networks to identify wildlife trade from online retailers using image and text data
+\BulletItem Improved models by creating Word2Vec embeddings using large amounts of unlabeled data
+\BulletItem Built end to end model to scrape and clean data, classify different properties of items, and store results using Python, TensorFlow
+\BulletItem Set up and maintain a MongoDB database of potential wildlife trade and model results
+\end{detail}
+
+\BigGap
+
+\textbf{Knewton},
+New York, NY
+
+\GapNoBreak
+%\BulletItem
+Data Science Intern
+\hfill
+\DatestampYMD{2016}{06}{16} --
+\DatestampYMD{2016}{09}{16}
+\begin{detail}
+\BulletItem Designed and implemented methods for diagnosing skill levels of new students with multi-armed bandit approaches in Java
+\BulletItem
+Formulated metrics to evaluate these policies and ran simulations of students to assess different approaches
+\BulletItem Investigated quality of student simulations and suggested improvements
+\BulletItem Implemented Bayesian optimization algorithm in Python for quickly optimizing parameters of recommender to automate QA using simulations
+\end{detail}
+
+\BigGap
+
+\textbf{The Weather Company},
+New York, NY
+
+\GapNoBreak
+%\BulletItem
+Part-Time Data Analyst
+\hfill
+\DatestampYMD{2014}{05}{05} --
+\DatestampYMD{2016}{05}{24}
+\begin{detail}
+\BulletItem
+Automated daily ETL process to integrate data from multiple sources and load in Amazon Redshift using Python
+\BulletItem Held a series of seminars instructing team members on using Python for data analysis
+\BulletItem Created dashboards in Tableau and QlikView summarizing advertising trends
+\end{detail}
+
+\BigGap
+
+%\textbf{NYU Mathematics Department},
+%New York, NY
+
+%\GapNoBreak
+%\BulletItem
+%Grader
+%\hfill
+%\DatestampYMD{2013}{09}{16} --
+%\DatestampYMD{2014}{12}{16}
+%\begin{detail}
+%\BulletItem
+%Corrected problem sets for undergraduate calculus and pre-calculus %courses
+%\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section
+{Projects}
+{Projects}
+{PDF:Projects}
+
+\href{http://cims.nyu.edu/~ceb545/LaSNe/viz/graph_line.html}
+{\textbf{Visualizing Twitter Networks of the 2014 Ukraine Crisis}},
+MS in Data Science, NYU \hfill
+Fall 2016
+
+\GapNoBreak
+\begin{detail}
+\BulletItem
+Created general heuristic to restructure and reduce large retweet network while preserving information
+\BulletItem Designed interactive visualization in D3.js tracking crisis over 95 days 
+\BulletItem Won 'Best Data Visualization' at the NYU Center for Data Science Academy Awards
+\end{detail}
+
+\BigGap
+
+\textbf{Question-Answering Using Deep Learning},
+MS in Data Science, NYU \hfill
+Fall 2016
+
+\GapNoBreak
+\begin{detail}
+\BulletItem
+Implemented model (\url{https://arxiv.org/abs/1606.02858}) for question answering in TensorFlow
+\BulletItem Experimented with model architecture using different methods of embedding and attention
+\end{detail}
+
+\BigGap
+
+\textbf{Parsing Images of Characters Using MCMC},
+MS in Data Science, NYU \hfill
+Fall 2016
+
+\GapNoBreak
+\begin{detail}
+\BulletItem
+Applied Markov Chain Monte-Carlo methods to improve inference process for parsing images of hand-drawn characters into strokes
+\end{detail}
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\section
+{Languages \& Tools}
+{Languages \& Tools}
+{PDF:LanguagesTools}
+
+Python (advanced), SQL (advanced), Java (intermediate), Javascript (intermediate), MATLAB (intermediate), Lua (novice), R (novice), LaTeX, Vim, AWS, Git, Pandas, TensorFlow, Keras, scikit-learn, Torch, D3.js, MongoDB, Spark, YARN, Docker
+
+%%%%%%%%%%%%
+%% OS %%
+%%%%%%%%%%%%
+
+\end{body}
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+%\begin{flushright}
+%\UseNoteFont%
+%[\textit{\CVNote}]%
+%\hspace{2.0mm}\null
+%\end{flushright}
+\label{LastPage}%~
+\end{document}
